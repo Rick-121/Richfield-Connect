@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sign Up - Richfield Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="signup.html">Sign Up</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="feed.html">Feed</a>
+
+    </nav>
+
+    <h2>Create Your Account</h2>
+    <form id="signupForm">
+
+        <label>Name:</label>
+        <input type="text" id="name"><span class="error"></span><br>
+        <label>Student Number:</label>
+        <input type="text" id="studentNumber"><span class="error"></span><br>
+        <label>Campus / DL:</label>
+        <select id="campus">
+            <option value="">Select campus</option>
+            <option value="Pretoria">Pretoria</option>
+            <option value="Johannesburg">Johannesburg</option>
+            <option value="Durban">Durban</option>
+            <option value="Cape Town">Cape Town</option>
+            <option value="Polokwane">Polokwane</option>
+            <option value="Distance Learning (DL)">Distance Learning (DL)</option>
+        </select><span class="error"></span><br>
+        <label>Email:</label>
+        <input type="text" id="email"><span class="error"></span><br>
+        <label>Password:</label>
+        <input type="password" id="password"><span class="error"></span><br>
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPassword"><span class="error"></span><br>
+        <label>Interests:</label>
+        <input type="text" id="interests"><span class="error"></span><br>
+        <label>Bio:</label>
+        <textarea id="bio"></textarea><span class="error"></span><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="preview">
+        <h3>Live Preview</h3>
+        <p>Name: <span id="previewName"></span></p>
+        <p>Bio: <span id="previewBio"></span></p>
+        <p>Interests: <span id="previewInterests"></span></p>
+    </div>
+</body>
+
+</html>
